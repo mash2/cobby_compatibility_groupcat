@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mash2_CobbyCompatibilityGroupcat>
+            <version>0.1.0</version>
+        </Mash2_CobbyCompatibilityGroupcat>
+    </modules>
+    <global>
+        <events>
+            <cobby_catalog_product_export_ids_before>
+                <observers>
+                    <mash2_cobby_compatibility_groupcat_export_ids>
+                        <type>singleton</type>
+                        <class>Mash2_CobbyCompatibilityGroupcat_Model_Observer</class>
+                        <method>disableGroupcatalogFilter</method>
+                    </mash2_cobby_compatibility_groupcat_export_ids>
+                </observers>
+            </cobby_catalog_product_export_ids_before>
+            <cobby_catalog_product_export_before>
+                <observers>
+                    <mash2_cobby_compatibility_groupcat_export_product>
+                        <type>singleton</type>
+                        <class>Mash2_CobbyCompatibilityGroupcat_Model_Observer</class>
+                        <method>disableGroupcatalogFilter</method>
+                    </mash2_cobby_compatibility_groupcat_export_product>
+                </observers>
+            </cobby_catalog_product_export_before>
+        </events>
+    </global>
+</config>

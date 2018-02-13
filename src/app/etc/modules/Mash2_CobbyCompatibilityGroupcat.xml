@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mash2_CobbyCompatibilityGroupcat>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Amasty_Groupcat/>
+                <Mash2_Cobby/>
+            </depends>
+        </Mash2_CobbyCompatibilityGroupcat>
+    </modules>
+</config>
